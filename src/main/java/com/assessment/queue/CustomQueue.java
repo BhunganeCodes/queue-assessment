@@ -70,7 +70,7 @@ public class CustomQueue<T> {
         //       null out that slot (helps GC)
         //       advance head circularly: head = (head + 1) % capacity
         //       decrement size and return the item
-        if (backingArray == null || backingArray.length == 0) throw new NoSuchElementException();
+        if (size == 0) throw new NoSuchElementException();
         Object item = backingArray[head];
         backingArray[head] = null;
         size--;
@@ -81,20 +81,20 @@ public class CustomQueue<T> {
     /** Return the front item without removing it. Throws NoSuchElementException if empty. */
     public T peek() {
         // TODO
-        if (backingArray == null || backingArray.length == 0) throw new NoSuchElementException();
+        if (size == 0) throw new NoSuchElementException();
         return (T) backingArray[head];
     }
 
     /** Return true if the queue contains no elements. */
     public boolean isEmpty() {
         // TODO
-        return backingArray.length == 0 || backingArray == null;
+        return size == 0;
     }
 
     /** Return the number of elements currently in the queue. */
     public int size() {
         // TODO
-        return backingArray.length;
+        return size;
     }
 
     /**
@@ -105,9 +105,10 @@ public class CustomQueue<T> {
     private void resize() {
         // TODO
         Object[] newArray = new Object[capacity * 2];
+        capacity *= 2;
 
         for (int i = 0; i < size; i++) {
-            newArray[i] = backingArray[i];
+            newArray[i] = backingArray[(head + i) % capacity];
         }
         head = 0;
         tail = size;
