@@ -105,5 +105,13 @@ public class CustomQueue<T> {
      */
     private void resize() {
         // TODO
+        Object[] newArray = new Object[capacity * 2];
+
+        for (int i = 0; i < size; i++) {
+            newArray[i] = backingArray[i];
+        }
+        head = 0;
+        tail = size;
+        backingArray = newArray;
     }
 }
