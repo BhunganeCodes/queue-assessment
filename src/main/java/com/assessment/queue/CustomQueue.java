@@ -88,7 +88,7 @@ public class CustomQueue<T> {
     /** Return true if the queue contains no elements. */
     public boolean isEmpty() {
         // TODO
-        return backingArray.length == 0;
+        return backingArray.length == 0 || backingArray == null;
     }
 
     /** Return the number of elements currently in the queue. */
