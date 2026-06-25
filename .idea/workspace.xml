@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dbf1e85-cb1a-43eb-b210-741672c795ad" name="Changes" comment="refactor: refactored isEmpty() method to match test cases">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/queue/CustomQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/queue/CustomQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test.iml" beforeDir="false" />
+    <list default="true" id="5dbf1e85-cb1a-43eb-b210-741672c795ad" name="Changes" comment="fix: fixed pom file bugs and managed to run tests.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/queue/PrinterSpooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/queue/PrinterSpooler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,30 +37,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.CustomQueueTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomQueueTest.newQueueIsEmpty.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.queue-assessment [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.queue-assessment [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.queue-assessment [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.queue-assessment [validate].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CustomQueueTest (1).executor": "Run",
+    "JUnit.CustomQueueTest.executor": "Run",
+    "JUnit.CustomQueueTest.newQueueIsEmpty.executor": "Run",
+    "JUnit.PrinterSpoolerTest.executor": "Run",
+    "Maven.queue-assessment [clean].executor": "Run",
+    "Maven.queue-assessment [compile].executor": "Run",
+    "Maven.queue-assessment [test].executor": "Run",
+    "Maven.queue-assessment [validate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.CustomQueueTest (1)">
+}]]></component>
+  <component name="RunManager" selected="JUnit.PrinterSpoolerTest">
     <configuration name="CustomQueueTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="queue-assessment" />
       <extension name="coverage">
@@ -109,8 +109,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrinterSpoolerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="queue-assessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assessment.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assessment.queue" />
+      <option name="MAIN_CLASS_NAME" value="com.assessment.queue.PrinterSpoolerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrinterSpoolerTest" />
         <item itemvalue="JUnit.CustomQueueTest (1)" />
         <item itemvalue="JUnit.CustomQueueTest" />
         <item itemvalue="JUnit.CustomQueueTest.newQueueIsEmpty" />
@@ -134,6 +150,7 @@
       <updated>1782413330558</updated>
       <workItem from="1782413331626" duration="2863000" />
       <workItem from="1782416221079" duration="346000" />
+      <workItem from="1782416642053" duration="709000" />
     </task>
     <task id="LOCAL-00001" summary="feat: added CustomQueue constructor with initialized class variables.">
       <option name="closed" value="true" />
@@ -199,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782414897680</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix: fixed pom file bugs and managed to run tests.">
+      <option name="closed" value="true" />
+      <created>1782416791920</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1782416791920</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +239,7 @@
     <MESSAGE value="feat: implemented resize() method logic" />
     <MESSAGE value="refactor: added resize() helper into the enqueue() method" />
     <MESSAGE value="refactor: refactored isEmpty() method to match test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: refactored isEmpty() method to match test cases" />
+    <MESSAGE value="fix: fixed pom file bugs and managed to run tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed pom file bugs and managed to run tests." />
   </component>
 </project>
