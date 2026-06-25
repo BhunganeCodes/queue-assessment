@@ -95,7 +95,7 @@ public class CustomQueue<T> {
     /** Return the number of elements currently in the queue. */
     public int size() {
         // TODO
-        return 0;
+        return backingArray.length;
     }
 
     /**
