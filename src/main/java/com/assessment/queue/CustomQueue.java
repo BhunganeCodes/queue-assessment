@@ -82,7 +82,8 @@ public class CustomQueue<T> {
     /** Return the front item without removing it. Throws NoSuchElementException if empty. */
     public T peek() {
         // TODO
-        return null;
+        if (backingArray == null || backingArray.length == 0) throw new NoSuchElementException();
+        return (T) backingArray[head];
     }
 
     /** Return true if the queue contains no elements. */
