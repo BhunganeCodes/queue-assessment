@@ -56,8 +56,7 @@ public class CustomQueue<T> {
         //       advance tail circularly: tail = (tail + 1) % capacity
         //       increment size
         if (size == capacity) {
-            Object[] newArray = new Object[capacity * 2];
-            backingArray = newArray;
+            resize();
         }
         backingArray[tail] = item;
         tail = (tail + 1) % capacity;
