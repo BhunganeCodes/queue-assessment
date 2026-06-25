@@ -36,9 +36,11 @@ public class PrinterSpooler {
     public record PrintJob(String name, int pages) {}
 
     // TODO: declare a Queue<PrintJob> field
+    private Queue<PrintJob> printJobs;
 
     public PrinterSpooler() {
         // TODO: initialise the queue
+        this.printJobs = new LinkedList<PrintJob>();
     }
 
     /**
@@ -48,6 +50,8 @@ public class PrinterSpooler {
      */
     public void addJob(String name, int pages) {
         // TODO
+        if (name.isEmpty() || name == null || pages < 1) throw new IllegalArgumentException();
+        printJobs.offer(new PrintJob(name, pages));
     }
 
     /**
@@ -56,7 +60,8 @@ public class PrinterSpooler {
      */
     public PrintJob printNext() {
         // TODO
-        return null;
+        if (printJobs.isEmpty()) return null;
+        return printJobs.poll();
     }
 
     /**
@@ -65,24 +70,25 @@ public class PrinterSpooler {
      */
     public PrintJob peekNext() {
         // TODO
-        return null;
+        if (printJobs.isEmpty()) return null;
+        return printJobs.element();
     }
 
     /** Return the number of jobs currently waiting. */
     public int pendingCount() {
         // TODO
-        return 0;
+        return printJobs.size();
     }
 
     /** Return the total number of pages across all pending jobs. */
     public int totalPendingPages() {
         // TODO
-        return 0;
+        return printNext().pages();
     }
 
     /** Return true if there are no pending jobs. */
     public boolean isEmpty() {
         // TODO
-        return true;
+        return printJobs.isEmpty();
     }
 }

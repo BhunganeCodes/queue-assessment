@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5dbf1e85-cb1a-43eb-b210-741672c795ad" name="Changes" comment="fix: fixed pom file bugs and managed to run tests.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/queue/PrinterSpooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/queue/PrinterSpooler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BhunganeCodes&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BhunganeCodes/queue-assessment.git&quot;,
+    &quot;accountId&quot;: &quot;1e4a4539-9eee-44ad-81f9-405552b1311b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FdmTWSjGLoAQTbNnjLXeTnkEOk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CustomQueueTest (1).executor": "Run",
+    "JUnit.CustomQueueTest.executor": "Run",
+    "JUnit.CustomQueueTest.newQueueIsEmpty.executor": "Run",
+    "JUnit.PrinterSpoolerTest.executor": "Run",
+    "Maven.queue-assessment [clean].executor": "Run",
+    "Maven.queue-assessment [compile].executor": "Run",
+    "Maven.queue-assessment [test].executor": "Run",
+    "Maven.queue-assessment [validate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.PrinterSpoolerTest">
+    <configuration name="CustomQueueTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="queue-assessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assessment.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assessment.queue" />
+      <option name="MAIN_CLASS_NAME" value="com.assessment.queue.CustomQueueTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assessment.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assessment.queue" />
+      <option name="MAIN_CLASS_NAME" value="com.assessment.queue.CustomQueueTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomQueueTest.newQueueIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assessment.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assessment.queue" />
+      <option name="MAIN_CLASS_NAME" value="com.assessment.queue.CustomQueueTest" />
+      <option name="METHOD_NAME" value="newQueueIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrinterSpoolerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="queue-assessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assessment.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assessment.queue" />
+      <option name="MAIN_CLASS_NAME" value="com.assessment.queue.PrinterSpoolerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PrinterSpoolerTest" />
+        <item itemvalue="JUnit.CustomQueueTest (1)" />
+        <item itemvalue="JUnit.CustomQueueTest" />
+        <item itemvalue="JUnit.CustomQueueTest.newQueueIsEmpty" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5dbf1e85-cb1a-43eb-b210-741672c795ad" name="Changes" comment="" />
+      <created>1782413330558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782413330558</updated>
+      <workItem from="1782413331626" duration="2863000" />
+      <workItem from="1782416221079" duration="346000" />
+      <workItem from="1782416642053" duration="709000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: added CustomQueue constructor with initialized class variables.">
+      <option name="closed" value="true" />
+      <created>1782413518314</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782413518314</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: implemented enqueue() method logic">
+      <option name="closed" value="true" />
+      <created>1782413823369</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782413823369</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: implemented peek() method logic">
+      <option name="closed" value="true" />
+      <created>1782414244393</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782414244393</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: implemented isEmpty() method logic">
+      <option name="closed" value="true" />
+      <created>1782414304552</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782414304552</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: implemented size() method logic">
+      <option name="closed" value="true" />
+      <created>1782414342012</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782414342012</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: implemented resize() method logic">
+      <option name="closed" value="true" />
+      <created>1782414536035</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1782414536035</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor: added resize() helper into the enqueue() method">
+      <option name="closed" value="true" />
+      <created>1782414590362</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1782414590362</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactor: refactored isEmpty() method to match test cases">
+      <option name="closed" value="true" />
+      <created>1782414897680</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1782414897680</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: fixed pom file bugs and managed to run tests.">
+      <option name="closed" value="true" />
+      <created>1782416791920</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1782416791920</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: added CustomQueue constructor with initialized class variables." />
+    <MESSAGE value="feat: implemented enqueue() method logic" />
+    <MESSAGE value="feat: implemented peek() method logic" />
+    <MESSAGE value="feat: implemented isEmpty() method logic" />
+    <MESSAGE value="feat: implemented size() method logic" />
+    <MESSAGE value="feat: implemented resize() method logic" />
+    <MESSAGE value="refactor: added resize() helper into the enqueue() method" />
+    <MESSAGE value="refactor: refactored isEmpty() method to match test cases" />
+    <MESSAGE value="fix: fixed pom file bugs and managed to run tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed pom file bugs and managed to run tests." />
+  </component>
+</project>
