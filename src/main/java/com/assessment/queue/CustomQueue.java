@@ -42,6 +42,11 @@ public class CustomQueue<T> {
     public CustomQueue() {
         // TODO: initialise your array with a starting capacity (e.g. 4)
         //       set head, tail, and size to 0
+        this.capacity = 4;
+        this.backingArray = new Object[capacity];
+        this.head = 0;
+        this.tail = 0;
+        this.size = 0;
     }
 
     /** Add an item to the back of the queue. */
