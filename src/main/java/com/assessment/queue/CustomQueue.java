@@ -55,6 +55,13 @@ public class CustomQueue<T> {
         //       place item at backingArray[tail]
         //       advance tail circularly: tail = (tail + 1) % capacity
         //       increment size
+        if (size == capacity) {
+            Object[] newArray = new Object[capacity * 2];
+            backingArray = newArray;
+        }
+        backingArray[tail] = item;
+        tail = (tail + 1) % capacity;
+        size++;
     }
 
     /** Remove and return the front item. Throws NoSuchElementException if empty. */
