@@ -71,7 +71,12 @@ public class CustomQueue<T> {
         //       null out that slot (helps GC)
         //       advance head circularly: head = (head + 1) % capacity
         //       decrement size and return the item
-        return null;
+        if (backingArray == null || backingArray.length == 0) throw new NoSuchElementException();
+        Object item = backingArray[head];
+        backingArray[head] = null;
+        size--;
+        head = (head + 1) % capacity;
+        return (T) item;
     }
 
     /** Return the front item without removing it. Throws NoSuchElementException if empty. */
