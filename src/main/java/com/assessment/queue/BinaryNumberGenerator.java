@@ -1,5 +1,6 @@
 package com.assessment.queue;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -39,6 +40,15 @@ public class BinaryNumberGenerator {
      */
     public List<String> generate(int n) {
         // TODO
-        return null;
+        if (n < 1) throw new IllegalArgumentException();
+        Queue<String> queue = new LinkedList<String>();
+        List<String> result = new ArrayList<String>();
+
+        String str = String.valueOf(n);
+        queue.offer(str);
+        for (String item : queue) {
+            result.add(item);
+        }
+        return result;
     }
 }
