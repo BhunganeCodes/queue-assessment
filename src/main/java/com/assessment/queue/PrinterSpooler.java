@@ -87,7 +87,7 @@ public class PrinterSpooler {
     /** Return the total number of pages across all pending jobs. */
     public int totalPendingPages() {
         // TODO
-        return printNext().pages();
+        return pages;
     }
 
     /** Return true if there are no pending jobs. */
