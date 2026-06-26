@@ -64,8 +64,10 @@ public class PrinterSpooler {
     public PrintJob printNext() {
         // TODO
         if (printJobs.isEmpty()) return null;
-        pages-= printJobs.element().pages();
-        return printJobs.poll();
+
+        PrintJob job = printJobs.poll();
+        pages -= job.pages();
+        return job;
     }
 
     /**
