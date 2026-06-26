@@ -37,10 +37,12 @@ public class PrinterSpooler {
 
     // TODO: declare a Queue<PrintJob> field
     private Queue<PrintJob> printJobs;
+    private int pages;
 
     public PrinterSpooler() {
         // TODO: initialise the queue
         this.printJobs = new LinkedList<PrintJob>();
+        this.pages = 0;
     }
 
     /**
@@ -50,8 +52,9 @@ public class PrinterSpooler {
      */
     public void addJob(String name, int pages) {
         // TODO
-        if (name.isEmpty() || name == null || pages < 1) throw new IllegalArgumentException();
+        if (name == null || name.isBlank() || pages < 1) throw new IllegalArgumentException();
         printJobs.offer(new PrintJob(name, pages));
+        this.pages += pages;
     }
 
     /**
@@ -61,6 +64,7 @@ public class PrinterSpooler {
     public PrintJob printNext() {
         // TODO
         if (printJobs.isEmpty()) return null;
+        pages-= printJobs.element().pages();
         return printJobs.poll();
     }
 
