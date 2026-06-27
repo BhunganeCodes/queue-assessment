@@ -61,6 +61,9 @@ public class TaskScheduler {
     public void addTask(String name) {
         // TODO
         if (name == null || name.isBlank()) throw new IllegalArgumentException();
+
+        Task task = new Task(name);
+        pendingTasks.addFirst(task);
     }
 
     /**
