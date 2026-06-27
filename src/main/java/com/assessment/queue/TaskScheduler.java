@@ -60,7 +60,7 @@ public class TaskScheduler {
         if (name == null || name.isBlank()) throw new IllegalArgumentException();
 
         Task task = new Task(name);
-        pendingTasks.addFirst(task);
+        pendingTasks.offerLast(task);
     }
 
     /**
