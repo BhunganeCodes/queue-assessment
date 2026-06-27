@@ -75,7 +75,10 @@ public class TaskScheduler {
      */
     public Task executeNext() {
         // TODO
-        return null;
+        if (pendingTasks.isEmpty()) throw new NoSuchElementException();
+        Task executedTask = pendingTasks.pollFirst();
+        history.addLast(executedTask);
+        return executedTask;
     }
 
     /**
