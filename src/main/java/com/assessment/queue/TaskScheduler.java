@@ -44,9 +44,13 @@ public class TaskScheduler {
 
     // TODO: declare a Deque<Task> for pending tasks
     // TODO: declare a Deque<Task> for execution history
+    private Deque<Task> pendingTasks;
+    private Deque<Task> history;
 
     public TaskScheduler() {
         // TODO: initialise both deques
+        this.pendingTasks = new ArrayDeque<>();
+        this.history = new ArrayDeque<>();
     }
 
     /**
@@ -56,6 +60,7 @@ public class TaskScheduler {
      */
     public void addTask(String name) {
         // TODO
+        if (name == null || name.isBlank()) throw new IllegalArgumentException();
     }
 
     /**
