@@ -1,9 +1,6 @@
 package com.assessment.queue;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 /**
  * PROBLEM SET 4: Task Scheduler with Undo
@@ -77,7 +74,7 @@ public class TaskScheduler {
         // TODO
         if (pendingTasks.isEmpty()) throw new NoSuchElementException();
         Task executedTask = pendingTasks.pollFirst();
-        history.addLast(executedTask);
+        history.offerLast(executedTask);
         return executedTask;
     }
 
@@ -90,7 +87,10 @@ public class TaskScheduler {
      */
     public Task undoLast() {
         // TODO
-        return null;
+        if (history.isEmpty()) throw new NoSuchElementException();
+        Task undo = history.pollLast();
+        pendingTasks.offerFirst(undo);
+        return undo;
     }
 
     /**
@@ -99,18 +99,18 @@ public class TaskScheduler {
      */
     public List<Task> pendingTasks() {
         // TODO
-        return null;
+        return Collections.unmodifiableList(new ArrayList<>(pendingTasks));
     }
 
     /** Return the number of tasks in the execution history. */
     public int historySize() {
         // TODO
-        return 0;
+        return history.size();
     }
 
     /** Return true if there are tasks waiting to be executed. */
     public boolean hasPending() {
         // TODO
-        return false;
+        return !pendingTasks.isEmpty();
     }
 }
