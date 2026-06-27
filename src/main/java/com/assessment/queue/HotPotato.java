@@ -1,5 +1,6 @@
 package com.assessment.queue;
 
+import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -54,6 +55,20 @@ public class HotPotato {
         //         pass the potato `step` times (dequeue → enqueue)
         //         eliminate the front player (dequeue, don't re-enqueue)
         // TODO: the final remaining element is the winner — return their name
-        return null;
+        if (players == null || players.isEmpty() || step < 1) throw new IllegalArgumentException();
+        Queue<String> allPlayers = new LinkedList<>();
+        allPlayers.addAll(players);
+
+        while (allPlayers.size() > 1) {
+
+            int rotations = (step == 1) ? 1 : step - 1;
+
+            for (int i = 0; i < rotations; i++) {
+                allPlayers.offer(allPlayers.poll());
+            }
+
+            allPlayers.poll();
+        }
+        return allPlayers.peek();
     }
 }
